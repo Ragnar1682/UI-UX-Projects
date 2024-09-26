@@ -36,6 +36,71 @@
     .searchbar{
       height: 100px;
     }
+    .btn{
+      background-color: #2fdab8;
+    }
+    /* .smicon:hover{
+      transform: rotateX(90deg);
+      transition: 1s;
+      transform-origin: bottom;
+    } */
+
+    .turn{
+      perspective:1000px ;
+      transform-style: preserve-3d;
+    }
+
+    .d1{
+      height: 40px;
+      transform: rotateX(-93deg) translateY(-5rem)  translateZ(-11px) ;
+     background-color: rgb(255, 255, 255);
+     text-align: center;
+     transition: 1.4s;
+                
+    }
+    .d2{
+      height: 40px;
+      /* border: solid; */
+      transform: translateY(-1.75rem);
+      transition: 1.3s;
+      /* background-color: rgb(0, 25, 247); */
+    }
+
+    .turn:hover .d1{
+      transform: rotateX(-1deg) translateZ(4rem)translateY(10px);
+    
+       perspective: 800px;
+      transform-style: preserve-3d;
+    
+    }
+    .turn:hover .d2{
+      transform: rotateX(-90deg) translateZ(-1.02rem)  ;
+    
+    } 
+   
+    .smiconfb{
+      background-color: #1974EC;
+      
+    
+      
+    }
+       
+    .smicontw{
+      background-color: #1DA1F2;
+
+    }
+    .smiconins{
+      background-color: #F40B8C;
+
+    }
+
+    .smiconlin{
+      background-color: #2464AD;
+    
+
+    }
+
+
 
 
     
@@ -62,23 +127,49 @@
         </div> -->
         <form class="searchbar d-flex p-4 col-md-4 " role="search">
             <input class="form-control me-2" type="search" placeholder="Search here...." aria-label="Search">
-            <button  class="btn bg-dark" type="submit"><i class=" fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+            <button  class="btn rounded-0"  type="submit"><i class=" fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
           </form>
           <div class="logo col-md-4 p-3 text-center ">
             <span class="Elogo px-3 m-1 text-light rounded-0 bg-black"> <strong>E</strong></span><span class="eliteshoppy">Lite Shoppy</span>
           </div>
           <div class="social col-md-4">
-            <div></div>
-            <div class="socialicon d-flex p-4 fs-4  text-end">
-                <div class="fs-5">Share on :</div>
-                <div><i class=" p-1 fa-brands fa-square-facebook" style="color: #0866FF;"></i></div>
-                <div><i class=" p-1 fa-brands fa-square-twitter" style="color: #1DA1F2;"></i></div>
-                <div><i class=" p-1 fa-brands fa-square-instagram" style="color: #F40B8C;"></i></div>
-                <div><i class=" p-1 fa-brands fa-linkedin" style="color: #2464AD;"></i></div>
+            <div class="socialicon d-flex p-5  fs-5 text-end">
+                <div class="d-flex" >Share on :
+                  <div class="turn">
+                    <div class="d1 px-2"><i class="fa-brands smicon fs-3 px-2 fa-facebook-f"></i></div>
+                    <div class="d2 px-2"><i class="fa-brands smiconfb fs-3 px-2 fa-facebook-f" style="color: #ffffff;"></i></div>
+                  </div>
+                  <div class="turn">
+                    <div class="d1 px-2 "><i class="fa-brands smicon fs-3 px-2 fa-twitter"></i></div>
+                    <div class="d2 px-2"><i class="fa-brands smicontw fs-3 px-2 fa-twitter" style="color: #ffffff;"></i></div>
+                  </div>
+                  <div class="turn">
+                    <div class="d1 px-2"><i class="fa-brands smicon fs-3 fa-instagram"></i></div>
+                    <div class="d2 px-2"><i class="fa-brands smiconins fs-3 px-2 fa-instagram" style="color: #ffffff;"></i></div>
+                  </div>
+                  <div class="turn">
+                    <div class="d1 px-2"><i class="fa-brands smicon fs-3 fa-linkedin-in"></i></div>
+                    <div class="d2 px-2"><i class="fa-brands smiconlin fs-3 px-2 fa-linkedin-in" style="color: #ffffff;"></i></div>
+                  </div>
+                </div>
+           
             </div>
           </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- <div class="lowerheader p-4 d-flex p-4 bg-black text-light ">
         <div class="p-2 col-md-1">Home</div>
         <div class="p-2 col-md-1">About</div>
