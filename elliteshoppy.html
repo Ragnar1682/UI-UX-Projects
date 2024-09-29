@@ -17,15 +17,7 @@
         padding-left: 10%;
         
     }
-    /* .image{
-        height: 450px;
-    } */
-    /* .carouselheading{
-        font-size: 48px;
-    } */
-    /* .carousel-caption{
-        padding: 10% !important;
-    } */
+
     .Elogo{
         font-size: 45px;
     }
@@ -55,6 +47,7 @@
       padding: 7px;
       transition: 500ms;
       transform: translateY(-30px);
+      
 
 
   
@@ -63,18 +56,18 @@
 
     .turn{
       perspective:1000px ;
-      transform-style: preserve-3d;
     }
 
     .turn:hover .d1{
       transform: rotateX(1deg) translateZ(3rem)translateY(10px);
-    
-       perspective: 800px;
+      perspective: 800px;
       transform-style: preserve-3d;
     
     }
     .turn:hover .d2{
       transform: rotateX(-90deg) translateZ(-1.02rem)  ;
+      transform-style: preserve-3d;
+
     
     } 
     .titleshareon{
@@ -100,6 +93,13 @@
       background-color: #2464AD;
     
     }
+    .cart{
+      width: 15%;
+    }
+    .lowerheader{
+      font-size: 18px;
+    }
+
 
 
 
@@ -113,7 +113,7 @@
 </body>
 <div class="header">
     <div class="upperheader d-flex bg-black small  fw-normal text-light p-1 col text-center ">
-        <div class="col-md-2 border-end "></div>
+        <div class=" col-md-2 border-end "></div>
         <div class="col-md-2 border-end px-5"><i class="fa-solid fa-lock" style="color: #63E6BE;"></i> Sign in </div>
         <div class="col-md-2 border-end px-5"><i class="fa-solid fa-pen-to-square" style="color: #63E6BE;"></i> Signup</div>
         <div class="col-md-2 border-end px-5"><i class="fa-solid fa-phone" style="color: #63E6BE;"></i> Call : 1234567890</div>
@@ -148,7 +148,7 @@
                     <div class="d1"><i class="fa-brands smicon fs-3 fa-instagram"></i></div>
                     <div class="d2 smiconins"><i class="fa-brands  fs-3  fa-instagram" style="color: #ffffff;"></i></div>
                   </div>
-                  <div class="turn px-3">
+                  <div class="turn ">
                     <div class="d1"><i class="fa-brands smicon fs-3 fa-linkedin-in"></i></div>
                     <div class="d2 smiconlin"><i class="fa-brands  fs-3  fa-linkedin-in" style="color: #ffffff;"></i></div>
                   </div>
@@ -162,24 +162,20 @@
 
 
 
-
-
-
-
-
-
-
-
-
-    <!-- <div class="lowerheader p-4 d-flex p-4 bg-black text-light ">
+    <div class="lowerheader  d-flex p-4  bg-black text-light ">
+        <div class="p-2 col-md-2"></div>  
+           
         <div class="p-2 col-md-1">Home</div>
+
         <div class="p-2 col-md-1">About</div>
         <div class="p-2 col-md-1">Men wear</div>
         <div class="p-2 col-md-1">Women wear</div>
         <div class="p-2 col-md-1">Short Codes</div>
         <div class="p-2 col-md-1">Contact</div>
-        <div class="p-2 col-md-1">Cart</div>     
-    </div> -->
+        <div class=" cart p-2 col-md-2 bg-success text-center">Cart</div>     
+
+    </div>
+
     <!-- <div id="carouselCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
