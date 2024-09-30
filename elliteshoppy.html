@@ -111,22 +111,23 @@
       height: 90px;
     }
     .progress-bar{
-
+      transform: translateX(-135px); 
 
     }
-    .progress-bar:hover{
-      animation: progress-bar 6s linear infinite;
-    }
+    .headerline:hover .progress-bar{
+      transform: translateX(0px); 
 
-    @keyframes progress-bar {
-      0%{
-        transform: translate(-100%);
-      }
-      100%{
-        transform: translateX(0px);
-      }
       
+
+
     }
+
+    
+
+
+
+
+
 
 
 
@@ -179,7 +180,6 @@
            
             </div>
           </div>
-
     </div>
 
 
@@ -193,14 +193,33 @@
           <div class="progress headerline bg-black  p-1" role="progressbar">
             <div class="progress-bar" style="width: 100%"></div>
           </div>
-
         </li>
         
-        <li class="col-md-1">About</li>
-        <li class="col-md-1">Men wear</li>
-        <li class="col-md-1">Women wear</li>
-        <li class="col-md-1">Short Codes</li>
-        <li class="col-md-1">Contact</li>
+        <li class="col-md-1">About
+          <div class="progress headerline bg-black  p-1" role="progressbar">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </li>
+        <li class="col-md-1">Men wear
+          <div class="progress headerline bg-black  p-1" role="progressbar">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </li>
+        <li class="col-md-1">Women wear
+          <div class="progress headerline bg-black  p-1" role="progressbar">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </li>
+        <li class="col-md-1">Short Codes4
+          <div class="progress headerline bg-black  p-1" role="progressbar">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </li>
+        <li class="col-md-1">Contact
+          <div class="progress headerline bg-black  p-1" role="progressbar">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </li>
         <li class="col-md-2 bg-success"><i class="fa-solid fa-cart-shopping"></i></li>
       </ul>
     </div>
