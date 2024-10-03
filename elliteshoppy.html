@@ -10,6 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <style>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
     .upperheader{
         font-size: 14px;
     }
@@ -97,30 +101,37 @@
       width: 15%;
     }
     .lowerheader{
-      font-size: 18px;
+      
     }
     .headericon{
       list-style: none;
     }
     .headerline{
-      padding-top: -30px;
+      /* padding-top: -30px; */
 
     }
 
     .lowerheader {
-      height: 90px;
+      /* height: 90px; */
     }
     .progress-bar{
-      transform: translateX(-135px); 
+      transform: translateX(-130px) translateY(27px) ; 
       transition: 1s;
-
-    }
-    .headerline:hover .progress-bar{
-      transform: translateX(0px); 
-
+      color: #2FDAB8;
       
 
 
+    }
+    .headerline:hover .progress-bar{
+      transform: translateX(-20px) translateY(27px) ;
+      background-color: #2FDAB8;
+ 
+
+      
+    }
+    .cart{
+      background-color: #2FDAB8;
+      
     }
 
     
@@ -186,42 +197,29 @@
 
 
 
-    <div class="lowerheader p-3  bg-black text-light text-center ">
-      <ul class="headericon d-flex">
-        <li class="col-md-2"></li>
+    <div class="lowerheader   bg-black text-light   ">
+      <ul class="headericon d-flex container  justify-content-center ">
+       
 
-        <li class="col-md-1 headerline">Home
-          <div class="progress  bg-black  p-1" role="progressbar">
-            <div class="progress-bar" style="width: 100%"></div>
-          </div>
+        <li class="col-md-1 p-3  headerline" style="overflow: hidden;">Home
+            <div class="progress-bar progress " role="progressbar" style="width: 120%;"></div>
         </li>
-        
-        <li class="col-md-1 headerline">About
-          <div class="progress  bg-black  p-1" role="progressbar">
-            <div class="progress-bar" style="width: 100%"></div>
-          </div>
+        <li class="col-md-1 p-3 headerline" style="overflow: hidden;">About
+            <div class="progress-bar progress " role="progressbar" style="width: 120%;"></div>
         </li>
-        <li class="col-md-1 headerline">Men wear
-          <div class="progress  bg-black  p-1" role="progressbar">
-            <div class="progress-bar" style="width: 100%"></div>
-          </div>
+        <li class="col-md-1  p-3 headerline" style="overflow: hidden;">Men wear
+            <div class="progress-bar progress " role="progressbar" style="width: 120%;"></div>
         </li>
-        <li class="col-md-1 headerline">Women wear
-          <div class="progress  bg-black  p-1" role="progressbar">
-            <div class="progress-bar" style="width: 100%"></div>
-          </div>
+        <li class="col-md-1  p-3 headerline" style="overflow: hidden;">Womenwear
+            <div class="progress-bar progress " role="progressbar" style="width: 120%;"></div>
         </li>
-        <li class="col-md-1 headerline">Short Codes4
-          <div class="progress  bg-black  p-1" role="progressbar">
-            <div class="progress-bar" style="width: 100%"></div>
-          </div>
+        <li class="col-md-1  p-3 headerline" style="overflow: hidden;">ShortCodes
+            <div class="progress-bar progress " role="progressbar" style="width: 120%;"></div>
         </li>
-        <li class="col-md-1 headerline">Contact
-          <div class="progress  bg-black  p-1" role="progressbar">
-            <div class="progress-bar" style="width: 100%"></div>
-          </div>
+        <li class="col-md-1  p-3 headerline" style="overflow: hidden;">Contact
+            <div class="progress-bar progress " role="progressbar" style="width: 120%;"></div>
         </li>
-        <li class="col-md-2 bg-success"><i class="fa-solid fa-cart-shopping"></i></li>
+        <li class=" cart col-md-2 p-3 text-center"><i class="fa-solid fs-5 p-2 fa-cart-shopping" style="color: #000000;"></i></li>
       </ul>
     </div>
 
