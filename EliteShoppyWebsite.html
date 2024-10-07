@@ -104,6 +104,20 @@
       /* margin-right: 40px; */
 
     }
+    .progress-bar{
+      transform: translateX(-120%) translateY(20px);
+
+    }
+    .headlines:hover .progress-bar{
+      transform: translateX(-10px) translateY(20px) ;
+      transition: 500ms;
+
+      
+    }
+    .LowerM{
+      padding-top: 15px;
+    }
+ 
 
     
 
@@ -169,16 +183,26 @@
             </div>
           </div>
     </div>
-    <div class="bg-black justify-content-center p-2 d-flex text-light">
-      <ul class=" lowermenu headmenu d-flex">
-        <li class="p-2 ms-4 d-flex">Home
-          <div class="progress-bar progress bg-success w-100"></div>
+    <div class="bg-black LowerM justify-content-center d-flex text-light">
+      <ul class=" lowermenu  d-flex">
+        <li class="p-2 ms-4  headlines " style="overflow: hidden;">Home
+          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
         </li>
-        <li class="p-2 ms-4 d-flex">About</li>
-        <li class="p-2 ms-4 d-flex">Men Wear</li>
-        <li class="p-2 ms-4 d-flex">Women Wear</li>
-        <li class="p-2 ms-4 d-flex">Short Codes</li>
-        <li class="p-2 ms-4 d-flex">Contact</li>
+        <li class="p-2 ms-4  headlines" style="overflow: hidden;" >About
+          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+        </li>
+        <li class="p-2 ms-4 headlines" style="overflow: hidden;">Men Wear
+          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+        </li>
+        <li class="p-2 ms-4 headlines" style="overflow: hidden;">Women Wear
+          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+        </li>
+        <li class="p-2 ms-4 headlines" style="overflow: hidden;">Short Codes
+          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+        </li>
+        <li class="p-2 ms-4  headlines" style="overflow: hidden;">Contact
+          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+        </li>
         <li class="p-2 ms-4 d-flex">Cart</li>
       </ul>
     </div>
@@ -192,6 +216,12 @@
     <li><a class="dropdown-item" href="#">Something else here</a></li>
   </ul>
 </div>
+
+
+
+
+
+
 
 
 
