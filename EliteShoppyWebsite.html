@@ -10,6 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <style>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
     .upperheader{
         font-size: 14px;
     }
@@ -17,15 +21,7 @@
         padding-left: 10%;
         
     }
-    /* .image{
-        height: 450px;
-    } */
-    /* .carouselheading{
-        font-size: 48px;
-    } */
-    /* .carousel-caption{
-        padding: 10% !important;
-    } */
+
     .Elogo{
         font-size: 45px;
     }
@@ -39,50 +35,53 @@
     .btn{
       background-color: #2fdab8;
     }
-    /* .smicon:hover{
-      transform: rotateX(90deg);
-      transition: 1s;
-      transform-origin: bottom;
-    } */
+    .d1{
+      height: 40px;
+      width: 40px;
+      padding: 7px;
+      transition: 500ms;
+      transform: rotateX(-90deg) translateY(-5rem)  translateZ(-7px) ;
+
+
+    }
+
+    .d2{
+      height: 40px;
+      width: 40px;
+      padding: 7px;
+      transition: 500ms;
+      transform: translateY(-30px);
+      
+
+
+  
+    }
+
 
     .turn{
       perspective:1000px ;
-      transform-style: preserve-3d;
-    }
-
-    .d1{
-      height: 40px;
-      transform: rotateX(-93deg) translateY(-5rem)  translateZ(-11px) ;
-     background-color: rgb(255, 255, 255);
-     text-align: center;
-     transition: 1.4s;
-                
-    }
-    .d2{
-      height: 40px;
-      /* border: solid; */
-      transform: translateY(-1.75rem);
-      transition: 1.3s;
-      /* background-color: rgb(0, 25, 247); */
     }
 
     .turn:hover .d1{
-      transform: rotateX(-1deg) translateZ(4rem)translateY(10px);
-    
-       perspective: 800px;
+      transform: rotateX(1deg) translateZ(3rem)translateY(10px);
+      perspective: 800px;
       transform-style: preserve-3d;
     
     }
     .turn:hover .d2{
       transform: rotateX(-90deg) translateZ(-1.02rem)  ;
+      transform-style: preserve-3d;
+
     
     } 
-   
+    .titleshareon{
+      font-size: 15px;
+    }
+
+
+
     .smiconfb{
-      background-color: #1974EC;
-      
-    
-      
+      background-color: #0f62fc;
     }
        
     .smicontw{
@@ -97,8 +96,27 @@
     .smiconlin{
       background-color: #2464AD;
     
+    }
+
+    .lowermenu li{
+      font-size: 18px;
+      letter-spacing: 2px;
+      /* margin-right: 40px; */
 
     }
+
+    
+
+
+
+
+    
+
+
+
+
+
+
 
 
 
@@ -112,7 +130,7 @@
 </body>
 <div class="header">
     <div class="upperheader d-flex bg-black small  fw-normal text-light p-1 col text-center ">
-        <div class="col-md-2 border-end "></div>
+        <div class=" col-md-2 border-end "></div>
         <div class="col-md-2 border-end px-5"><i class="fa-solid fa-lock" style="color: #63E6BE;"></i> Sign in </div>
         <div class="col-md-2 border-end px-5"><i class="fa-solid fa-pen-to-square" style="color: #63E6BE;"></i> Signup</div>
         <div class="col-md-2 border-end px-5"><i class="fa-solid fa-phone" style="color: #63E6BE;"></i> Call : 1234567890</div>
@@ -120,11 +138,6 @@
         <div class="col-md-2 "></div>
     </div>
     <div class="middleheader p-1 d-flex">
-
-        <!-- <div class="searchbar">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button  class="btn bg-dark" type="submit"><i class=" fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-        </div> -->
         <form class="searchbar d-flex p-4 col-md-4 " role="search">
             <input class="form-control me-2" type="search" placeholder="Search here...." aria-label="Search">
             <button  class="btn rounded-0"  type="submit"><i class=" fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
@@ -133,30 +146,52 @@
             <span class="Elogo px-3 m-1 text-light rounded-0 bg-black"> <strong>E</strong></span><span class="eliteshoppy">Lite Shoppy</span>
           </div>
           <div class="social col-md-4">
-            <div class="socialicon d-flex p-5  fs-5 text-end">
-                <div class="d-flex" >Share on :
-                  <div class="turn">
-                    <div class="d1 px-2"><i class="fa-brands smicon fs-3 px-2 fa-facebook-f"></i></div>
-                    <div class="d2 px-2"><i class="fa-brands smiconfb fs-3 px-2 fa-facebook-f" style="color: #ffffff;"></i></div>
+            <div class="socialicon d-flex p-3   text-end">
+                <div class="titleshareon fs-4 p-1" >Share on: </div>
+                  <div class="turn px-3">
+                    <div class="d1 "><i class="fa-brands smicon fs-3  fa-facebook-f"  ></i></div>
+                    <div class="d2 smiconfb"><i class="fa-brands  fs-3  fa-facebook-f" style="color: #ffffff;"></i></div>
                   </div>
                   <div class="turn">
-                    <div class="d1 px-2 "><i class="fa-brands smicon fs-3 px-2 fa-twitter"></i></div>
-                    <div class="d2 px-2"><i class="fa-brands smicontw fs-3 px-2 fa-twitter" style="color: #ffffff;"></i></div>
+                    <div class="d1 "><i class="fa-brands smicon fs-3  fa-twitter"></i></div>
+                    <div class="d2 smicontw"><i class="fa-brands  fs-3  fa-twitter" style="color: #ffffff;"></i></div>
                   </div>
-                  <div class="turn">
-                    <div class="d1 px-2"><i class="fa-brands smicon fs-3 fa-instagram"></i></div>
-                    <div class="d2 px-2"><i class="fa-brands smiconins fs-3 px-2 fa-instagram" style="color: #ffffff;"></i></div>
+                  <div class="turn px-3">
+                    <div class="d1"><i class="fa-brands smicon fs-3 fa-instagram"></i></div>
+                    <div class="d2 smiconins"><i class="fa-brands  fs-3  fa-instagram" style="color: #ffffff;"></i></div>
                   </div>
-                  <div class="turn">
-                    <div class="d1 px-2"><i class="fa-brands smicon fs-3 fa-linkedin-in"></i></div>
-                    <div class="d2 px-2"><i class="fa-brands smiconlin fs-3 px-2 fa-linkedin-in" style="color: #ffffff;"></i></div>
+                  <div class="turn ">
+                    <div class="d1"><i class="fa-brands smicon fs-3 fa-linkedin-in"></i></div>
+                    <div class="d2 smiconlin"><i class="fa-brands  fs-3  fa-linkedin-in" style="color: #ffffff;"></i></div>
                   </div>
                 </div>
            
             </div>
           </div>
-
     </div>
+    <div class="bg-black justify-content-center p-2 d-flex text-light">
+      <ul class=" lowermenu headmenu d-flex">
+        <li class="p-2 ms-4 d-flex">Home
+          <div class="progress-bar progress bg-success w-100"></div>
+        </li>
+        <li class="p-2 ms-4 d-flex">About</li>
+        <li class="p-2 ms-4 d-flex">Men Wear</li>
+        <li class="p-2 ms-4 d-flex">Women Wear</li>
+        <li class="p-2 ms-4 d-flex">Short Codes</li>
+        <li class="p-2 ms-4 d-flex">Contact</li>
+        <li class="p-2 ms-4 d-flex">Cart</li>
+      </ul>
+    </div>
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
 
 
 
@@ -164,21 +199,19 @@
 
 
 
-
-
-
-
-
-
-    <!-- <div class="lowerheader p-4 d-flex p-4 bg-black text-light ">
-        <div class="p-2 col-md-1">Home</div>
+        <!-- <div class="p-2 col-md-2"></div>  
+        <div class="p-2 col-md-1">Home
+          <div class="progress bg-black  p-1" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 100%"></div>
+          </div>
+        </div>
         <div class="p-2 col-md-1">About</div>
         <div class="p-2 col-md-1">Men wear</div>
         <div class="p-2 col-md-1">Women wear</div>
         <div class="p-2 col-md-1">Short Codes</div>
         <div class="p-2 col-md-1">Contact</div>
-        <div class="p-2 col-md-1">Cart</div>     
-    </div> -->
+        <div class=" cart p-2 col-md-2 bg-success text-center"><i class="fa-solid fa-cart-shopping"></i></div>      -->
+
     <!-- <div id="carouselCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
