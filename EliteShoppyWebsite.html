@@ -1,426 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/69f4ddc8c6.js" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
 <style>
-  *{
-    margin: 0px !important;
-    padding: 0px !important ;
-  }
-    .upperheader{
+    * {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .upperheader {
         font-size: 14px;
     }
-    .social{
+
+    .social {
         padding-left: 10%;
-        
+
     }
 
-    .Elogo{
+    .Elogo {
         font-size: 45px;
     }
-    .eliteshoppy{
+
+    .eliteshoppy {
         font-size: 45px;
 
     }
-    .searchbar{
-      height: 100px;
-    }
-    .btn{
-      background-color: #2fdab8;
-    }
-    .d1{
-      height: 40px;
-      width: 40px;
-      padding: 7px;
-      transition: 500ms;
-      transform: rotateX(-90deg) translateY(-5rem)  translateZ(-7px) ;
 
-
+    .searchbar {
+        height: 100px;
     }
 
-    .d2{
-      height: 40px;
-      width: 40px;
-      padding: 7px;
-      transition: 500ms;
-      transform: translateY(-30px);
-      
-
-
-  
+    .btn {
+        background-color: #2fdab8;
     }
 
+    .d1 {
+        height: 40px;
+        width: 40px;
+        padding: 7px;
+        transition: 500ms;
+        transform: rotateX(-90deg) translateY(-5rem) translateZ(-7px);
 
-    .turn{
-      perspective:1000px ;
-    }
-
-    .turn:hover .d1{
-      transform: rotateX(1deg) translateZ(3rem)translateY(10px);
-      perspective: 800px;
-      transform-style: preserve-3d;
-    
-    }
-    .turn:hover .d2{
-      transform: rotateX(-90deg) translateZ(-1.02rem)  ;
-      transform-style: preserve-3d;
-
-    
-    } 
-    .titleshareon{
-      font-size: 15px;
-    }
-
-
-
-    .smiconfb{
-      background-color: #0f62fc;
-    }
-       
-    .smicontw{
-      background-color: #1DA1F2;
-
-    }
-    .smiconins{
-      background-color: #F40B8C;
 
     }
 
-    .smiconlin{
-      background-color: #2464AD;
-    
+    .d2 {
+        height: 40px;
+        width: 40px;
+        padding: 7px;
+        transition: 500ms;
+        transform: translateY(-30px);
+
+
+
+
     }
 
 
-    .lowermenu li{
-      font-size: 18px;
-      letter-spacing: 1px;
-      /* margin-right: 40px; */
-
-    }
-    .progress-bar{
-      transform: translateX(-120%) translateY(18px);
-
-    }
-    .headlines:hover .progress-bar{
-      transform: translateX(-10px) translateY(18px) ;
-      transition: 500ms;
-
-      
+    .turn {
+        perspective: 1000px;
     }
 
-    .cartlogo{
-      width: 200px;
-    }
-
-    .carousel-item{
-      height: 450px;
-      width: 100%;
+    .turn:hover .d1 {
+        transform: rotateX(1deg) translateZ(3rem)translateY(10px);
+        perspective: 800px;
+        transform-style: preserve-3d;
 
     }
-    .carousel-inner .carousel-item{
-      transition: 0s !important;
-    }
-    .footerimage ul li{
-      height: 80px;
-      width: 60px;
 
-    }
-    .footerimage ul li img{
-      border: none;
-
-    }
-    .footerimage ul{
-      list-style: none;
-  
-    }
-    .footerlogo .Elogo{
-      background-color:#2fdab8;
-    }
-    .footerturn{
-      font-size: 18px;
-
-    }
-    .list{
-      list-style: none;
-    }
-    .footersectionthirdlist{
-      list-style: none;
-    }
-
-    .about{
-      font-size: 16px;
-
-    }
-    .about h5{
-      font-size: 18px;
-
-    }
-    .card{
-      border-style: none;
+    .turn:hover .d2 {
+        transform: rotateX(-90deg) translateZ(-1.02rem);
+        transform-style: preserve-3d;
 
 
     }
-    .discountsectionimg img{
-      height: 450px;
-      width: 100%;
+
+    .titleshareon {
+        font-size: 15px;
     }
-    .leftWhatTrending img{
-      height: 575px;
-      width: 70%;
+
+
+
+    .smiconfb {
+        background-color: #0f62fc;
     }
- 
- 
 
-   
+    .smicontw {
+        background-color: #1DA1F2;
 
+    }
 
-    
+    .smiconins {
+        background-color: #F40B8C;
 
+    }
 
+    .smiconlin {
+        background-color: #2464AD;
 
-
-    
-
-
-
-
-
+    }
 
 
+    .lowermenu li {
+        font-size: 18px;
+        letter-spacing: 1px;
+        /* margin-right: 40px; */
+
+    }
+
+    .progress-bar {
+        transform: translateX(-120%) translateY(18px);
+
+    }
+
+    .headlines:hover .progress-bar {
+        transform: translateX(-10px) translateY(18px);
+        transition: 500ms;
 
 
+    }
 
-    
+    .cartlogo {
+        width: 200px;
+    }
 
-    
+    .carousel-item {
+        height: 450px;
+        width: 100%;
+
+    }
+
+    .carousel-inner .carousel-item {
+        transition: 0s !important;
+    }
+
+    .footerimage ul li {
+        height: 80px;
+        width: 60px;
+
+    }
+
+    .footerimage ul li img {
+        border: none;
+
+    }
+
+    .footerimage ul {
+        list-style: none;
+
+    }
+
+    .footerlogo .Elogo {
+        background-color: #2fdab8;
+    }
+
+    .footerturn {
+        font-size: 18px;
+
+    }
+
+    .list {
+        list-style: none;
+    }
+
+    .footersectionthirdlist {
+        list-style: none;
+    }
+
+    .about {
+        font-size: 16px;
+
+    }
+
+    .about h5 {
+        font-size: 18px;
+
+    }
+
+    .card {
+        border-style: none;
+
+
+    }
+
+    .discountsectionimg img {
+        height: 450px;
+        width: 100%;
+    }
+
+    .leftWhatTrending img {
+        height: 575px;
+        width: 70%;
+    }
 </style>
+
 <body>
-    
+
 </body>
 <div class="header">
     <div class="upperheader d-flex bg-black small  fw-normal text-light p-1 col text-center ">
         <div class="col-md-2 border-end "></div>
         <div class="col-md-2 border-end px-5"><i class="fa-solid fa-lock" style="color: #63E6BE;"></i> Sign in </div>
-        <div class="col-md-2 border-end px-5"><i class="fa-solid fa-pen-to-square" style="color: #63E6BE;"></i> Signup</div>
-        <div class="col-md-2 border-end px-5"><i class="fa-solid fa-phone" style="color: #63E6BE;"></i> Call : 1234567890</div>
-        <div class="col-md-2 border-end px-5"><i class="fa-solid fa-envelope" style="color: #63E6BE;"></i> info@gmail.com</div>
+        <div class="col-md-2 border-end px-5"><i class="fa-solid fa-pen-to-square" style="color: #63E6BE;"></i> Signup
+        </div>
+        <div class="col-md-2 border-end px-5"><i class="fa-solid fa-phone" style="color: #63E6BE;"></i> Call :
+            1234567890</div>
+        <div class="col-md-2 border-end px-5"><i class="fa-solid fa-envelope" style="color: #63E6BE;"></i>
+            info@gmail.com</div>
         <div class="col-md-2 "></div>
     </div>
     <div class="middleheader p-1 d-flex">
         <form class="searchbar d-flex p-4 col-md-4 " role="search">
             <input class="form-control me-2" type="search" placeholder="Search here...." aria-label="Search">
-            <button  class="btn rounded-0 p-3"  type="submit"><i class=" fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-          </form>
-          <div class="logo col-md-4 p-3 text-center ">
-            <span class="Elogo px-3 m-1 text-light rounded-0 bg-black"> <strong>E</strong></span><span class="eliteshoppy">Lite Shoppy</span>
-          </div>
-          <div class="social col-md-4">
+            <button class="btn rounded-0 p-3" type="submit"><i class=" fa-solid fa-magnifying-glass"
+                    style="color: #ffffff;"></i></button>
+        </form>
+        <div class="logo col-md-4 p-3 text-center ">
+            <span class="Elogo px-3 m-1 text-light rounded-0 bg-black"> <strong>E</strong></span><span
+                class="eliteshoppy">Lite Shoppy</span>
+        </div>
+        <div class="social col-md-4">
             <div class="socialicon d-flex p-2  text-end">
-                <div class="titleshareon fs-3 p-1" >Share on: </div>
-                  <div class="turn px-2">
-                    <div class="d1 "><i class="fa-brands smicon fs-3 p-2  fa-facebook-f"  ></i></div>
-                    <div class="d2 smiconfb"><i class="fa-brands  fs-3  p-2 fa-facebook-f" style="color: #ffffff;"></i></div>
-                  </div>
-                  <div class="turn">
-                    <div class="d1 "><i class="fa-brands smicon fs-3  p-2 fa-twitter"></i></div>
-                    <div class="d2 smicontw"><i class="fa-brands  fs-3  p-2 fa-twitter" style="color: #ffffff;"></i></div>
-                  </div>
-                  <div class="turn px-3">
-                    <div class="d1"><i class="fa-brands smicon fs-3 p-2 fa-instagram"></i></div>
-                    <div class="d2 smiconins"><i class="fa-brands  fs-3  p-2 fa-instagram" style="color: #ffffff;"></i></div>
-                  </div>
-                  <div class="turn ">
-                    <div class="d1"><i class="fa-brands smicon fs-3 p-2 fa-linkedin-in"></i></div>
-                    <div class="d2 smiconlin"><i class="fa-brands  fs-3 p-2 fa-linkedin-in" style="color: #ffffff;"></i></div>
-                  </div>
+                <div class="titleshareon fs-3 p-1">Share on: </div>
+                <div class="turn px-2">
+                    <div class="d1 "><i class="fa-brands smicon fs-3 p-2  fa-facebook-f"></i></div>
+                    <div class="d2 smiconfb"><i class="fa-brands  fs-3  p-2 fa-facebook-f" style="color: #ffffff;"></i>
+                    </div>
                 </div>
-           
+                <div class="turn">
+                    <div class="d1 "><i class="fa-brands smicon fs-3  p-2 fa-twitter"></i></div>
+                    <div class="d2 smicontw"><i class="fa-brands  fs-3  p-2 fa-twitter" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="turn px-3">
+                    <div class="d1"><i class="fa-brands smicon fs-3 p-2 fa-instagram"></i></div>
+                    <div class="d2 smiconins"><i class="fa-brands  fs-3  p-2 fa-instagram" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="turn ">
+                    <div class="d1"><i class="fa-brands smicon fs-3 p-2 fa-linkedin-in"></i></div>
+                    <div class="d2 smiconlin"><i class="fa-brands  fs-3 p-2 fa-linkedin-in" style="color: #ffffff;"></i>
+                    </div>
+                </div>
             </div>
-          </div>
+
+        </div>
     </div>
-    
-    <div class="bg-black LowerM text-light">
-      <ul class=" lowermenu  justify-content-center d-flex">
+</div>
+
+<div class="bg-black LowerM text-light">
+    <ul class=" lowermenu  justify-content-center d-flex">
         <li class="p-2 ms-4  headlines" style="overflow: hidden;">Home
-          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+            <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
         </li>
-        <li class="p-2 ms-4  headlines" style="overflow: hidden;" >About
-          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+        <li class="p-2 ms-4  headlines" style="overflow: hidden;">About
+            <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
         </li>
         <li class="p-2 ms-4 headlines" style="overflow: hidden;">Men Wear
-          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+            <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
         </li>
         <li class="p-2 ms-4 headlines" style="overflow: hidden;">Women Wear
-          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+            <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
         </li>
         <li class="p-2 ms-4 headlines" style="overflow: hidden;">Short Codes
-          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+            <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
         </li>
         <li class="p-2 ms-4   headlines" style="overflow: hidden;">Contact
-          <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
+            <div class="progress-bar  progress  rounded-0" role="progressbar" style="width: 120%;"></div>
         </li>
-        <li class="cart d-flex text-center ms-5  bg-success"><i class=" p-3  fa-solid cartlogo fa-cart-shopping" style="color: #ffffff;"></i></li>
-      </ul>
-    </div>
+        <li class="cart d-flex text-center ms-5  bg-success"><i class=" p-3  fa-solid cartlogo fa-cart-shopping"
+                style="color: #ffffff;"></i></li>
+    </ul>
+</div>
 
-    <div id="carouselCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<div id="carouselCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      </div>
-      <div class="carousel-inner  bg-black ">
+    </div>
+    <div class="carousel-inner  bg-black ">
         <div class="carousel-item   active">
-          <img class="opacity-50" src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none translate-middle top-50 start-50  lh-lg d-md-block">
-            <h5 class="fs-1">The Biggest <span style="color: #63E6BE">Sale</span> </h5>
-            <p class="fs-4 " style="color: #ffc813">Special for today  </p>
-            <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
+            <img class="opacity-50"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner1.jpg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none translate-middle top-50 start-50  lh-lg d-md-block">
+                <h5 class="fs-1">The Biggest <span style="color: #63E6BE">Sale</span> </h5>
+                <p class="fs-4 " style="color: #ffc813">Special for today </p>
+                <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
 
-          </div>
+            </div>
         </div>
         <div class="carousel-item">
-          <img class="opacity-50" src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption  translate-middle top-50 start-50 lh-lg d-none d-md-block">
-            <h5 class="fs-1">Summer  <span style="color: #63E6BE">Collection</span> </h5>
-            <p class="fs-4" style="color: #ffc813">Special for today  </p>
-            <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
+            <img class="opacity-50"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner2.jpg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption  translate-middle top-50 start-50 lh-lg d-none d-md-block">
+                <h5 class="fs-1">Summer <span style="color: #63E6BE">Collection</span> </h5>
+                <p class="fs-4" style="color: #ffc813">Special for today </p>
+                <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
 
-          </div>
+            </div>
         </div>
         <div class="carousel-item">
-          <img  class="opacity-50" src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption translate-middle top-50 start-50  lh-lg d-none d-md-block">
-            <h5 class="fs-1">The Biggest <span style="color: #63E6BE">Sale</span> </h5>
-            <p class="fs-4" style="color: #ffc813">Special for today  </p>
-            <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
+            <img class="opacity-50"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner3.jpg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption translate-middle top-50 start-50  lh-lg d-none d-md-block">
+                <h5 class="fs-1">The Biggest <span style="color: #63E6BE">Sale</span> </h5>
+                <p class="fs-4" style="color: #ffc813">Special for today </p>
+                <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
 
-          </div>
+            </div>
         </div>
         <div class="carousel-item">
-          <img class="opacity-50"  src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner4.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption translate-middle top-50 start-50 lh-lg d-none d-md-block">
-            <h5 class="fs-1"> Summer  <span style="color: #63E6BE">Collection</span> </h5>
-            <p  class="fs-4"style="color: #ffc813">Special for today  </p>
-            <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
+            <img class="opacity-50"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner4.jpg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption translate-middle top-50 start-50 lh-lg d-none d-md-block">
+                <h5 class="fs-1"> Summer <span style="color: #63E6BE">Collection</span> </h5>
+                <p class="fs-4" style="color: #ffc813">Special for today </p>
+                <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
 
-          </div>
+            </div>
         </div>
         <div class="carousel-item">
-          <img class="opacity-50"  src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner5.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption translate-middle top-50 start-50  lh-lg d-none d-md-block">
-            <h5 class="fs-1">The Biggest <span style="color: #63E6BE">Sale</span> </h5>
-            <p  class="fs-4" style="color: #ffc813">Special for today  </p>
-            <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
+            <img class="opacity-50"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner5.jpg"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption translate-middle top-50 start-50  lh-lg d-none d-md-block">
+                <h5 class="fs-1">The Biggest <span style="color: #63E6BE">Sale</span> </h5>
+                <p class="fs-4" style="color: #ffc813">Special for today </p>
+                <button type="button" class="btn  p-1 btn-success rounded-0">Shop Now</button>
 
-          </div>
+            </div>
         </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    </button>
+</div>
 </div>
 
 <div class="d-flex m-5   justify-content-center">
-  <div class="leftside position-relative text-light">
-    <div>
-        <img class="p-3" src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg" alt="">
-        <h4 class="position-absolute  start-50  top-50 fs-2 translate-middle"> <span style="color: red;"> <strong>F</strong></span>all Ahead</h4>
+    <div class="leftside position-relative text-light">
+        <div>
+            <img class="p-3"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg"
+                alt="">
+            <h4 class="position-absolute  start-50  top-50 fs-2 translate-middle"> <span style="color: red;">
+                    <strong>F</strong></span>all Ahead</h4>
 
-      </div>
-  </div>
-  <div class="rightside ">
-    <div class=" righttext position-relative text-light">
-        <img class="p-3" src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg" class="d-block" alt="">
-        <h4 class="position-absolute  start-50  top-50 fs-2 translate-middle"> <span style="color: red;"> <strong>F</strong></span>all Ahead</h4>
+        </div>
     </div>
-  </div>
+    <div class="rightside ">
+        <div class=" righttext position-relative text-light">
+            <img class="p-3"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg"
+                class="d-block" alt="">
+            <h4 class="position-absolute  start-50  top-50 fs-2 translate-middle"> <span style="color: red;">
+                    <strong>F</strong></span>all Ahead</h4>
+        </div>
+    </div>
 </div>
 
 
 <div class=" Customers d-flex">
-  <div class="store-front w-50 ">
-      <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/mid.jpg" alt="Store Front Display" class="store-image">
-  </div>
-  <div class="promo-box w-50" style="background-color: #63E6BE;">
-    <div class="imgdiv bg-light p-5  fs-5 mt-5">
-      <h4 class="mb-3"><strong>SAVE UP TO <span class="text-danger">50%</span> IN THIS WEEK</strong></h4>
-      <p>Suspendisse varius turpis efficitur erat laoreet dapibus. Mauris sollicitudin scelerisque commodo. Nunc dapibus mauris sed metus finibus posuere.</p>
-      <div class="stats d-flex text-center fs-4 mx-4 mt-4 ">
-          <div class="stat-item p-3  mx-5" >
-              <div class="icon" style="color: #63E6BE;"><i class="fa-regular fa-user"></i></div>
-              <span>Customers</span>
-              <h4><strong>653</strong></h4>
-          </div>
-          <div class="stat-item p-3 mx-5">
-              <div class="icon" style="color: #63E6BE;"><i class="fa-regular fa-calendar"></i></div>
-              <span>Events</span>
-              <h4><strong>823</strong></h4>
-          </div>
-          <div class="stat-item p-3 mx-5">
-              <div class="icon" style="color: #63E6BE;"><i class="fa-solid fa-shield-halved"></i></div>
-              <span>Awards</span>
-              <h4><strong>45</strong></h4>
-          </div>
-      </div>
+    <div class="store-front w-50 ">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/mid.jpg"
+            alt="Store Front Display" class="store-image">
     </div>
+    <div class="promo-box w-50" style="background-color: #63E6BE;">
+        <div class="imgdiv bg-light p-5  fs-5 mt-5">
+            <h4 class="mb-3"><strong>SAVE UP TO <span class="text-danger">50%</span> IN THIS WEEK</strong></h4>
+            <p>Suspendisse varius turpis efficitur erat laoreet dapibus. Mauris sollicitudin scelerisque commodo. Nunc
+                dapibus mauris sed metus finibus posuere.</p>
+            <div class="stats d-flex text-center fs-4 mx-4 mt-4 ">
+                <div class="stat-item p-3  mx-5">
+                    <div class="icon" style="color: #63E6BE;"><i class="fa-regular fa-user"></i></div>
+                    <span>Customers</span>
+                    <h4><strong>653</strong></h4>
+                </div>
+                <div class="stat-item p-3 mx-5">
+                    <div class="icon" style="color: #63E6BE;"><i class="fa-regular fa-calendar"></i></div>
+                    <span>Events</span>
+                    <h4><strong>823</strong></h4>
+                </div>
+                <div class="stat-item p-3 mx-5">
+                    <div class="icon" style="color: #63E6BE;"><i class="fa-solid fa-shield-halved"></i></div>
+                    <span>Awards</span>
+                    <h4><strong>45</strong></h4>
+                </div>
+            </div>
+        </div>
 
-  </div>
+    </div>
 </div>
 
 <div class="WhatTrending p-5 text-center ">
-  <span class="fs-1"><strong>WHAT'S</strong> Trending</span>
-  <div class="d-flex mt-4">
-    <div class="leftWhatTrending col-6 text-end  p-2">
-      <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bb1.jpg" alt="">
-    </div>
-    <div class="rightWhatTrending col-6">
-      <img class="p-2" src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom3.jpg" alt="">
-      <img class="p-2" src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom4.jpg" alt="">
+    <span class="fs-1"><strong>WHAT'S</strong> Trending</span>
+    <div class="d-flex mt-4">
+        <div class="leftWhatTrending col-6 text-end  p-2">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bb1.jpg"
+                alt="">
+        </div>
+        <div class="rightWhatTrending col-6">
+            <img class="p-2"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom3.jpg"
+                alt="">
+            <img class="p-2"
+                src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom4.jpg"
+                alt="">
+        </div>
+
+
     </div>
 
 
-  </div>
-  
-  
 </div>
 
 
 
 
-<div class="offer d-flex ">
-  <div class="offerleft position-relative col-md-6">
-    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg" alt="">
-    <h4 class="position-absolute  start-50  top-50 fs-2 text-light translate-middle">Flat <span style="color: #63E6BE;">50%</span> Offer</h4>
-  </div>
-  <div class="offerright position-relative col-md-6">
-    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg" alt="">
-    <h4 class="position-absolute  start-50  top-50 fs-2 text-light translate-middle">Flat <span style="color: #63E6BE;">50%</span> Offer</h4>
+<!-- <div class="offer d-flex ">
+    <div class="offerleft position-relative col-md-6">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg"
+            alt="">
+        <h4 class="position-absolute  start-50  top-50 fs-2 text-light translate-middle">Flat <span
+                style="color: #63E6BE;">50%</span> Offer</h4>
+    </div>
+    <div class="offerright position-relative col-md-6">
+        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg"
+            alt="">
+        <h4 class="position-absolute  start-50  top-50 fs-2 text-light translate-middle">Flat <span
+                style="color: #63E6BE;">50%</span> Offer</h4>
 
-  </div>
+    </div>
+</div> -->
+
+
+
+
+
+<div class="container">
+    <!-- <h3>New Arrivals</h3>
+    <div class="arrivalmenu">
+        <ul>
+            <li>MEN</li>
+            <li>WOMEN</li>
+            <li>BAGS</li>
+            <li>FOOTWEAR</li>
+        </ul>
+    </div> -->
+    <!-- <div class="container">
+        <div class="clothsection row text-center align-item-center">
+            <div class="clothsectionarrival p-5 col-md-3 card">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    class="card-img-top" alt="...">
+                <span class="card-title text-danger fs-5 mt-3">Formal Blue Shirt</span>
+                <p class="card-text">$45.99 </p>
+                <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+
+            </div>
+            <div class="clothsectionarrival col-md-3">2</div>
+            <div class="clothsectionarrival col-md-3">3</div>
+            <div class="clothsectionarrival col-md-3">4</div>
+        </div>
+
+    </div> -->
+
 </div>
 
+<div class="section20">
+    <div class="text-center">
+        <div>
+            <h1>New Arrivals </h1>
+        </div>
+        <div class="">
+            <div class="arrivalmenu ">
+                <ul class="d-flex  list-unstyled justify-content-evenly my-4  ">
+                    <li><strong>MEN</strong> </li>
+                    <li><strong>WOMEN</strong> </li>
+                    <li><strong>BAGS</strong> </li>
+                    <li><strong>FOOTWEAR</strong> </li>
+                </ul>
+            </div>
+            <div class="newarrival row text-center justify-content-evenly  " >
+                <div class="newarrivalfirst card   col-md-3" >
+                  <div class="card  border   " style="width: 14rem;">
+                    <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
+                      <span class="card-title text-danger fs-5 mt-3">Formal Blue Shirt</span>
+                      <p class="card-text">$45.99 </p>
+                      <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+                  </div>
+                </div>
+                <div class="newarrivalfirst col-md-3 ">
+                    <div class="card  border   " style="width: 14rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
+                    <span class="card-title text-danger fs-5   mt-3 ">Formal Blue Shirt</span>
+                    <p class="card-text">$45.99 </p>
+                      <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+                  </div>
+                </div>
+                <div class="newarrivalfirst  col-md-3 ">
+                    <div class="card  border   " style="width: 14rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
+                    <span class="card-title text-danger fs-5  mt-3 ">Formal Blue Shirt</span>
+                    <p class="card-text">$45.99 </p>
+                      <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+                  </div>
+                </div>
+                <div class="newarrivalfirst   col-md-3 ">
+                    <div class="card  border   " style="width: 14rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
+                    <span class="card-title text-danger fs-5  mt-3 ">Formal Blue Shirt</span>
+                    <p class="card-text">$45.99 </p>
+                      <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+                  </div>
+                </div>
+                <div class="newarrivalfirst   col-md-3 ">
+                    <div class="card  border   " style="width: 14rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
+                    <span class="card-title text-danger fs-5 mt-3  ">Formal Blue Shirt</span>
+                    <p class="card-text">$45.99 </p>
+                      <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+                  </div>
+                </div>
+                <div class="newarrivalfirst col-md-3 ">
+                    <div class="card  border   " style="width: 14rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
+                    <span class="card-title text-danger fs-5 mt-3  ">Formal Blue Shirt</span>
+                    <p class="card-text">$45.99 </p>
+                      <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+                  </div>
+                </div>
+                <div class="newarrivalfirst   col-md-3 ">
+                    <div class="card  border   " style="width: 14rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
+                    <span class="card-title text-danger fs-5  mt-3 ">Formal Blue Shirt</span>
+                    <p class="card-text">$45.99 </p>
+                      <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+                  </div>
+                </div>
+                <div class="newarrivalfirst  col-md-3 ">
+                    <div class="card  border   " style="width: 14rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
+                    <span class="card-title text-danger fs-5  mt-3 ">Formal Blue Shirt</span>
+                    <p class="card-text">$45.99 </p>
+                      <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
+                  </div>
+                </div>
+            <!-- <div class="arrivaldress d-flex   justify-content-evenly ">
+                <div class="row">
+                    <div class="card col-md-3 " >
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                            class="card-img-top" alt="...">
+                        <span class="card-title text-danger fs-5 ">Formal Blue Shirt</span>
+                        <p class="card-text">$45.99 </p>
+                        <button type="button" class="btn mx-4 p-2 btn-success rounded-0">Shop Now</button>
+                    </div>
+                    <div class="card col-md-3 " >
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                            class="card-img-top" alt="...">
+                        <span class="card-title text-danger fs-5">Formal Blue Shirt</span>
+                        <p class="card-text">$45.99 </p>
+                        <button type="button" class="btn mx-4 p-2 btn-success rounded-0">Shop Now</button>
+                    </div>
+                    <div class="card col-md-3 " style="width: 10rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                            class="card-img-top" alt="...">
+                        <span class="card-title text-danger fs-5 ">Formal Blue Shirt</span>
+                        <p class="card-text">$45.99 </p>
+                        <button type="button" class="btn mx-4 p-2 btn-success rounded-0">Shop Now</button>
+                    </div>
+                    <div class="card col-md-3 " style="width: 10rem;">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                            class="card-img-top" alt="...">
+                        <span class="card-title text-danger fs-5">Formal Blue Shirt</span>
+                        <p class="card-text">$45.99 </p>
+                        <button type="button" class="btn mx-4 p-2 btn-success rounded-0">Shop Now</button>
+                    </div>
+                </div>
+                
+                
+                
+            </div> -->
 
-
-
-
-
+        </div>
+    </div>
+</div>
 
 
 
@@ -429,73 +616,110 @@
 
 
 <div class="container">
-    <div class="newarrival row text-center  " >
-      <div class="newarrivalfirst card   col-md-3" >
-        <div class="card  border  ">
-          <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
-            <span class="card-title text-danger fs-5 mt-3">Formal Blue Shirt</span>
-            <p class="card-text">$45.99 </p>
-            <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
-        </div>
-      </div>
-      <div class="newarrivalfirst col-md-3 ">
-        <div class="card border ">
-          <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
-          <span class="card-title text-danger fs-5   mt-3 ">Formal Blue Shirt</span>
-          <p class="card-text">$45.99 </p>
-            <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
-        </div>
-      </div>
-      <div class="newarrivalfirst  col-md-3 ">
-        <div class="card border ">
-          <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
-          <span class="card-title text-danger fs-5  mt-3 ">Formal Blue Shirt</span>
-          <p class="card-text">$45.99 </p>
-            <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
-        </div>
-      </div>
-      <div class="newarrivalfirst   col-md-3 ">
-        <div class="card border ">
-          <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
-          <span class="card-title text-danger fs-5  mt-3 ">Formal Blue Shirt</span>
-          <p class="card-text">$45.99 </p>
-            <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
-        </div>
-      </div>
-      <div class="newarrivalfirst   col-md-3 ">
-        <div class="card border ">
-          <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
-          <span class="card-title text-danger fs-5 mt-3  ">Formal Blue Shirt</span>
-          <p class="card-text">$45.99 </p>
-            <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
-        </div>
-      </div>
-      <div class="newarrivalfirst col-md-3 ">
-        <div class="card border ">
-          <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
-          <span class="card-title text-danger fs-5 mt-3  ">Formal Blue Shirt</span>
-          <p class="card-text">$45.99 </p>
-            <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
-        </div>
-      </div>
-      <div class="newarrivalfirst   col-md-3 ">
-        <div class="card border ">
-          <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
-          <span class="card-title text-danger fs-5  mt-3 ">Formal Blue Shirt</span>
-          <p class="card-text">$45.99 </p>
-            <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
-        </div>
-      </div>
-      <div class="newarrivalfirst  col-md-3 ">
-        <div class="card border ">
-          <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" class="card-img-top" alt="...">
-          <span class="card-title text-danger fs-5  mt-3 ">Formal Blue Shirt</span>
-          <p class="card-text">$45.99 </p>
-            <button type="button" class="btn mx-4 p-2 mt-2 btn-success rounded-0">Shop Now</button>
-        </div>
-      </div>
+    
       
     
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="discountsection">
+    <div class="card text-bg-dark discountsectionimg">
+        <img class="opacity-50 "
+            src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner3.jpg"
+            class="d-block w-100" alt="...">
+        <div class="card-img-overlay text-center top-50">
+            <h2 class="card-title fs-1 "> <strong>We Offer Flat <span style="color: black;">40%</span> Discount</strong>
+            </h2>
+            <button type="button" class="btn mt-5 p-2 btn-success rounded-0">Shop Now</button>
+        </div>
+    </div>
+</div>
+
+<div class="about p-5 d-flex justify-content-center ">
+
+    <div class="card">
+        <div class="row ">
+            <div class="col-md-3 ">
+                <i class="fa-solid bg-black text-light fa-truck fs-4 p-4 "></i>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body ">
+                    <h5 class="card-title" style="color: #63E6BE">Free Shipping</h5>
+                    <p class="card-text">This is a wider card withnatural nt is a little.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card ">
+        <div class="row">
+            <div class="col-md-3">
+                <i class="fa-solid bg-black text-light fa-bag-shopping fs-4 p-4"></i>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #63E6BE">24/7 Support</h5>
+                    <p class="card-text">This is a wider card withnatural nt is a little.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card ">
+        <div class="row">
+            <div class="col-md-3">
+                <i class="fa-solid bg-black text-light fa-truck fs-4 p-4 "></i>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #63E6BE">Money Back Guarantee</h5>
+                    <p class="card-text">This is a wider card withnatural nt is a little.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="row ">
+            <div class="col-md-3">
+                <i class="fa-solid bg-black text-light fa-gift fs-4 p-4"></i>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: #63E6BE">Free Gift Coupons</h5>
+                    <p class="card-text">This is a wider card withnatural nt is a little.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -503,180 +727,96 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="discountsection">
-    <div class="card text-bg-dark discountsectionimg">
-      <img class="opacity-50 "  src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/banner3.jpg" class="d-block w-100" alt="...">
-      <div class="card-img-overlay text-center top-50">
-        <h2 class="card-title fs-1 "> <strong>We Offer Flat <span style="color: black;">40%</span>  Discount</strong></h2>
-        <button type="button" class="btn mt-5 p-2 btn-success rounded-0">Shop Now</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="about p-5 d-flex justify-content-center ">
-
-      <div class="card">
-        <div class="row ">
-          <div class="col-md-3 ">
-            <i class="fa-solid bg-black text-light fa-truck fs-4 p-4 "></i>    
-          </div>
-          <div class="col-md-8">
-            <div class="card-body ">
-              <h5 class="card-title" style="color: #63E6BE">Free Shipping</h5>
-              <p class="card-text">This is a wider card withnatural nt is a little.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card ">
-        <div class="row">
-          <div class="col-md-3">
-            <i class="fa-solid bg-black text-light fa-bag-shopping fs-4 p-4"></i>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title" style="color: #63E6BE">24/7 Support</h5>
-              <p class="card-text">This is a wider card withnatural nt is a little.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card ">
-        <div class="row">
-          <div class="col-md-3">
-            <i class="fa-solid bg-black text-light fa-truck fs-4 p-4 "></i>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title" style="color: #63E6BE">Money Back Guarantee</h5>
-              <p class="card-text">This is a wider card withnatural nt is a little.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="row ">
-          <div class="col-md-3">
-            <i class="fa-solid bg-black text-light fa-gift fs-4 p-4"></i>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title" style="color: #63E6BE">Free Gift Coupons</h5>
-              <p class="card-text">This is a wider card withnatural nt is a little.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-
-
-
-  
-
-
-  <div class="footer p-5  d-flex bg-black text-light">
+<div class="footer p-5  d-flex bg-black text-light">
     <div class="footersectionfirst p-3 col-md-3 lh-lg">
-      <div class="footerlogo ">
-        <span class="Elogo mt-4 fs-3 px-3 text-light rounded-0" style="color: #2fdab8;"> <strong>E</strong></span><span class=" fs-3 eliteshoppy">Lite Shoppy</span>
-      </div>
-      <p class="text-secondary">Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
-      <div class="footersocialicon mt-2 ">
-        <div class="socialicon d-flex">
-            <div class="turn  footerturn">
-              <div class="d1"><i class="fa-brands smicon  p-3  fa-facebook-f"></i></div>
-              <div class="d2 smiconfb"><i class="fa-brands p-3 fa-facebook-f" style="color: #ffffff;"></i></div>
+        <div class="footerlogo ">
+            <span class="Elogo mt-4 fs-3 px-3 text-light rounded-0" style="color: #2fdab8;">
+                <strong>E</strong></span><span class=" fs-3 eliteshoppy">Lite Shoppy</span>
+        </div>
+        <p class="text-secondary">Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+            eius modi tempora.</p>
+        <div class="footersocialicon mt-2 ">
+            <div class="socialicon d-flex">
+                <div class="turn  footerturn">
+                    <div class="d1"><i class="fa-brands smicon  p-3  fa-facebook-f"></i></div>
+                    <div class="d2 smiconfb"><i class="fa-brands p-3 fa-facebook-f" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="turn px-3 footerturn">
+                    <div class="d1 "><i class="fa-brands smicon  p-3 fa-twitter"></i></div>
+                    <div class="d2 smicontw"><i class="fa-brands p-3 fa-twitter" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="turn footerturn">
+                    <div class="d1"><i class="fa-brands smicon p-3 fa-instagram"></i></div>
+                    <div class="d2 smiconins"><i class="fa-brands p-3 fa-instagram" style="color: #ffffff;"></i></div>
+                </div>
+                <div class="turn px-3 footerturn">
+                    <div class="d1"><i class="fa-brands smicon p-3 fa-linkedin-in"></i></div>
+                    <div class="d2 smiconlin"><i class="fa-brands p-3 fa-linkedin-in" style="color: #ffffff;"></i></div>
+                </div>
             </div>
-            <div class="turn px-3 footerturn">
-              <div class="d1 "><i class="fa-brands smicon  p-3 fa-twitter"></i></div>
-              <div class="d2 smicontw"><i class="fa-brands p-3 fa-twitter" style="color: #ffffff;"></i></div>
-            </div>
-            <div class="turn footerturn">
-              <div class="d1"><i class="fa-brands smicon p-3 fa-instagram"></i></div>
-              <div class="d2 smiconins"><i class="fa-brands p-3 fa-instagram" style="color: #ffffff;"></i></div>
-            </div>
-            <div class="turn px-3 footerturn">
-              <div class="d1"><i class="fa-brands smicon p-3 fa-linkedin-in"></i></div>
-              <div class="d2 smiconlin"><i class="fa-brands p-3 fa-linkedin-in" style="color: #ffffff;"></i></div>
-            </div>
-          </div>
-        
-      </div>
+
+        </div>
     </div>
     <div class="footersectionsecond p-3 col-md-3">
-      <h4><strong>OUR</strong><span class="fw-light"> INFORMATION</span></h4>
-      <span> </span>
-      <ul class="list text-secondary lh-lg mt-4">
-        <li>Home</li>
-        <li>Men's Wear</li>
-        <li>Women's wear</li>
-        <li>About</li>
-        <li>Short Codes</li>
-        <li>Contact</li>
-      </ul>
+        <h4><strong>OUR</strong><span class="fw-light"> INFORMATION</span></h4>
+        <span> </span>
+        <ul class="list text-secondary lh-lg mt-4">
+            <li>Home</li>
+            <li>Men's Wear</li>
+            <li>Women's wear</li>
+            <li>About</li>
+            <li>Short Codes</li>
+            <li>Contact</li>
+        </ul>
     </div>
     <div class="footersectionthird  p-3 col-md-3">
-      <h4><strong>STORE</strong><span class="fw-light"> INFORMATION</span></h4>
-      <ul class="footersectionthirdlist mt-4">
-        <li><i class="fa-solid mt-4 fa-phone px-3" style="color: #ffffff;"></i> <strong>Phone Number</strong> 
-        <div class="ms-5 text-secondary mt-2"> +1 234 567 8901</div></li>
-        <li><i class="fa-solid mt-4 fa-envelope px-3" style="color: #ffffff;"></i>  <strong>Email Address</strong>
-          <div class="ms-5 mt-2  text-secondary">Email : <span style="color: #2fdab8;">mail@example.com</span></div></li>
-        </li>
-        <li><i class="fa-solid mt-4 fa-location-dot px-3" style="color: #ffffff;"></i> <strong>Location</strong>
-          <div class="ms-5 mt-2 text-secondary">Broome St, NY 10002,California, USA.</div></li>
-        </li>
-      </ul>
-    
+        <h4><strong>STORE</strong><span class="fw-light"> INFORMATION</span></h4>
+        <ul class="footersectionthirdlist mt-4">
+            <li><i class="fa-solid mt-4 fa-phone px-3" style="color: #ffffff;"></i> <strong>Phone Number</strong>
+                <div class="ms-5 text-secondary mt-2"> +1 234 567 8901</div>
+            </li>
+            <li><i class="fa-solid mt-4 fa-envelope px-3" style="color: #ffffff;"></i> <strong>Email Address</strong>
+                <div class="ms-5 mt-2  text-secondary">Email : <span style="color: #2fdab8;">mail@example.com</span>
+                </div>
+            </li>
+            </li>
+            <li><i class="fa-solid mt-4 fa-location-dot px-3" style="color: #ffffff;"></i> <strong>Location</strong>
+                <div class="ms-5 mt-2 text-secondary">Broome St, NY 10002,California, USA.</div>
+            </li>
+            </li>
+        </ul>
+
     </div>
     <div class="footersectionfourt p-3 px-5 col-md-3">
-      <h4><strong>FLICKR</strong><span class="fw-light"> POSTS</span></h4>
-      <div class="footerimage mt-4 d-flex">
-        <ul class="p-1 ">
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t2.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-        </ul>
-        <ul class="p-1 ">
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-        </ul>
-        <ul class="p-1 ">
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-          <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg" class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-    
-</html>
+        <h4><strong>FLICKR</strong><span class="fw-light"> POSTS</span></h4>
+        <div class="footerimage mt-4 d-flex">
+            <ul class="p-1 ">
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t2.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+            </ul>
+            <ul class="p-1 ">
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+            </ul>
+            <ul class="p-1 ">
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+                <li><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg"
+                        class=" rounded-0 img-responsive img-thumbnail" alt="..."></li>
+            </ul>
+        </div>
 
+    </div>
+</div>
+
+</html>
