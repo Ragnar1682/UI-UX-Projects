@@ -179,12 +179,18 @@
     }
 
     .quickview {
-        transform: translateY(-215px);
+        transform: translateY(-320px);
+        opacity: 0;
+        transition: 1.3s;
     }
 
+    .formal{
+        overflow: hidden;
+    }
     .formal:hover .quickview {
         transform: translateY(0px);
-        transition: 1s;
+       opacity: 1;
+        overflow: hidden;
     }
 
     .iconforcolor:hover .iconforcolorchange {
