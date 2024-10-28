@@ -178,7 +178,7 @@
         transition: 1s;
     }
 
-    .quickview{
+    .quickview {
         transform: translateY(-215px);
     }
 
@@ -186,9 +186,20 @@
         transform: translateY(0px);
         transition: 1s;
     }
-    .iconforcolor:hover .iconforcolorchange{
-        background-color: #2fdab8  !important;
+
+    .iconforcolor:hover .iconforcolorchange {
+        background-color: #2fdab8 !important;
         transition: 1s;
+    }
+
+    .leftside:hover img {
+        transform: translateX(10px);
+        overflow: hidden !important;
+    }
+
+    .rightside:hover img {
+        transform: translateX(-10px);
+        overflow: hidden !important;
     }
 </style>
 
@@ -432,10 +443,16 @@
     <div class="WhatssTrending  text-center container ">
         <span class="fs-1 "><strong>WHAT'S</strong> Trending</span>
         <div class="d-flex">
-            <div class="col-6 mt-4"><img
-                    src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bb1.jpg"
-                    alt=""></div>
+
+            <div class="col-6 mt-4 position-relative">
+                <span
+                    class=" fallaheadsectionborder position-absolute  border border-4 pb-5     start-50  top-50  translate-middle"
+                    style="width: 90%; height: 90%;"></span>
+                <img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bb1.jpg"
+                    alt="">
+            </div>
             <div class="col-6">
+                
                 <img class="p-4"
                     src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom3.jpg"
                     alt="">
@@ -445,7 +462,10 @@
 
             </div>
         </div>
-    </div> 
+    </div>
+
+
+
 
     <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -453,6 +473,7 @@
 
     <div class="flat50offsection d-flex ">
         <div class="leftflat50offsection position-relative col-md-6 ">
+
             <img class="flat50offsectionimg"
                 src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg"
                 alt="">
@@ -468,6 +489,9 @@
 
         </div>
     </div>
+
+
+
 
 
 
@@ -569,6 +593,7 @@
                 <button type="button" class="btn w-75 btn-success rounded-0 my-2">Add To Cart</button>
             </div>
         </div>
+
     </div>
 
 
@@ -586,8 +611,15 @@
         <div class="position-absolute start-50  top-50 translate-middle text-center">
             <h4 class="   fs-1 text-light ">We Offer Flat <span style="color: #000000;">50%</span> Discount</h4>
             <button type="button" class="btn mt-5 p-2 btn-success rounded-0">Shop Now</button>
+
         </div>
+
     </div>
+
+
+
+
+
 
 
 
